@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #242353;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+  }
+  
+  .movie-container {
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  
+  .movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-left: 50px;
+    padding: 5px 30px 5px 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .container {
+    perspective: 1000px;
+    margin-bottom: 50px;
+  }
+  
+  .seat {
+    background-color: #444451;
+    height: 22px;
+    width: 30px;
+    margin: 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .seat.selected {
+    background-color: #38b480;
+  }
+  
+  .seat.occupied {
+    background-color: #fff;
+  }
+  
+  .seat:nth-of-type(4) {
+    margin-right: 28px;
+  }
+
+  .seat:nth-last-of-type(4) {
+    margin-left: 28px;
+  }
+  
+  .seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+  .showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .showcase li {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .showcase li small {
+    margin-left: 30px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .screen {
+    background-color: #fff;
+    height: 150px;
+    width: 102%;
+    margin: 35px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  p.text {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  
+  p.text span {
+    font-size: 50px;
+    color: #38b480;
+  }
